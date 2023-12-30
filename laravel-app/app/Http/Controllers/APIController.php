@@ -16,13 +16,15 @@ class APIController extends Controller
         if ($data->isEmpty()) {
             return response()->json([
                 'success' => false,
-                'message' => 'No data found'
+                'message' => 'No data found',
+                'data' => $data
             ], 404);
         }
 
         else {
             return response()->json([
                 'success' => true,
+                'message' => 'Data found',
                 'data' => $data
             ], 200);
         }
