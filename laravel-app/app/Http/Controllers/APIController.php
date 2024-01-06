@@ -18,7 +18,7 @@ class APIController extends Controller
                 'success' => false,
                 'message' => 'No data found',
                 'data' => $data
-            ], 404);
+            ], 400); //can be 404
         }
 
         else {
