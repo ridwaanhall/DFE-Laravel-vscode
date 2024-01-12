@@ -28,3 +28,8 @@ Route::get('/search', function () {
     $stories = \App\Models\Story::all();
     return view('search', ['stories' => $stories]);
 });
+
+// story v2
+Route::get('/story_search', function () {
+    return view('stories2');
+});
