@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// show all stories in web frontend
+Route::get('/stories', function () {
+    $stories = \App\Models\Story::all();
+    return view('stories', ['stories' => $stories]);
+});
+
+// show stories with search
+Route::get('/search', function () {
+    $stories = \App\Models\Story::all();
+    return view('search', ['stories' => $stories]);
+});
