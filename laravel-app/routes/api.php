@@ -18,5 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+// stories API
 Route::get('stories/v1/search', 'App\Http\Controllers\APIController@storysearch');
