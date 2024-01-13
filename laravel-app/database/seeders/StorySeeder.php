@@ -27,9 +27,9 @@ class StorySeeder extends Seeder
         }
 
         // create data
-        DB::table('story')->insert([
-            'title' => 'Story 1',
-            'desc' => 'Story 1 desc',
-        ]);
+        // DB::table('story')->insert([
+        //     'title' => 'Story 1',
+        //     'desc' => 'Story 1 desc',
+        // ]);
     }
 }
