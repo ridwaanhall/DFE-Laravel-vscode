@@ -33,3 +33,11 @@ Route::get('/search', function () {
 Route::get('/story_search', function () {
     return view('stories2');
 });
+
+Route::get('/cari', function () {
+    return view('cari');
+});
+
+Route::get('/hasil', function () {
+    return view('hasil');
+});
